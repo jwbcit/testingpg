@@ -227,11 +227,8 @@ h3 {
 	margin-top:100px;
 }
 
-#ad-rectangle {
-	width: 336px;
-	height:300px;
-	position:relative;
-	margin:40px auto;
+#about {
+	margin-top:20px;
 }
 
 #version-info, #privacy {
@@ -863,5 +860,4 @@ button:active {
 	text-align:center;
 	display:none;
 }
-
 
