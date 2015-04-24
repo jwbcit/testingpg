@@ -6,8 +6,8 @@
     <meta charset="utf-8"> 
     <meta name="Description" content="Play the classic card game Crazy Eights online for free. No download required. Can you beat the computer?">
 
-    <link rel="stylesheet" href="http://www.crazyeights-cardgame.com/392/crazyeights.min.css">
-    <link rel="canonical" href="./Crazy Eights_files/Crazy Eights.html">
+    <link rel="stylesheet" href="http://www.crazyeights-cardgame.com/396/crazyeights.min.css">
+    <link rel="canonical" href="./cz8_files/cz8.html">
 
     <!--Open Graph Protocol metadata-->
     <meta property="og:title" content="Crazy Eights">
@@ -16,9 +16,9 @@
     <meta property="og:url" content="http://www.crazyeights-cardgame.com">
     <meta property="og:image" content="http://www.crazyeights-cardgame.com/images/crazyeights-logo.png">
     <meta property="fb:admins" content="808179882"> 
-    <link href="./Crazy Eights_files/css" rel="stylesheet" type="text/css">
+    <link href="./cz8_files/css" rel="stylesheet" type="text/css">
  
-    <script async="" type="text/javascript" src="./Crazy Eights_files/ca-pub-1347967898967153.js"></script><script async="" src="./Crazy Eights_files/analytics.js"></script><script>
+    <script async="" type="text/javascript" src="./cz8_files/ca-pub-1347967898967153.js"></script><script async="" src="./cz8_files/analytics.js"></script><script>
         var category = 'Crazy Eights';
     </script>
     
@@ -39,26 +39,7 @@
 </head>
 <body>
     <a name="play"></a>
-    <div id="promo-links">
-         <div>
-        Also try:
-          <a href="http://cardgames.io/spit/">Spit</a>,
-          <a href="http://cardgames.io/ginrummy/">Gin Rummy</a>,
-          <a href="http://cardgames.io/sudoku/">Sudoku</a>,
-          <a href="http://www.yahtzee-game.com/">Yahtzee</a>,
-          <a href="http://www.euchre-cardgame.com/">Euchre</a>,
-          <a href="http://www.hearts-cardgame.com/">Hearts</a>,
-          <a href="http://www.spades-cardgame.com/">Spades</a>,
-          <a href="http://www.whist-cardgame.com/">Whist</a>,      
-          
-          <a href="http://www.idiot-cardgame.com/">Idiot</a>,
-          <a href="http://www.switch-cardgame.com/">Switch</a>,
-          <a href="http://www.solitaire-cardgame.com/">Solitaire</a>,
-          <a href="http://www.freecell-cardgame.com/">Free Cell</a>,
-          <a href="http://www.spidersolitaire-cardgame.com/">Spider Solitaire</a>,
-          <a href="http://www.gofish-cardgame.com/">Go Fish</a>
-        </div>
-    </div>    
+ 
     <div id="wrapper">
         <div id="page">
 
@@ -67,7 +48,7 @@
                      <h1>CRAZY EIGHTS</h1>
                 </div>
 
-                <div id="menucontainer">
+                <!--div id="menucontainer">
                     <ul id="menu">
                         <li><a title="Start a new game of Crazy Eights against the computer" href="http://www.crazyeights-cardgame.com/#newgame">New Game</a></li>
                         
@@ -76,7 +57,7 @@
                         
                         <li class="stats-link"> | <a title="See your statistics" href="http://www.crazyeights-cardgame.com/statistics/">Statistics</a></li>
                     </ul>
-                </div>
+                </div-->
             </div>
             <div id="pagecontent">
                 <div id="board" class="board">
@@ -96,13 +77,13 @@
                             
                             <div id="top-player" class="avatar">
                                 <div></div>
-                                <small>Bill</small>
+                                <small class="dealer">Bill</small>
                             </div>
                             <div id="top-player-bubble" class="bubble"><p><span></span></p></div>
 
                             <div id="bottom-player" class="avatar">
                                 <div style="width: 50px; height: 50px; background-position: 0px 0px;"></div>
-                                <small class="dealer">You</small>
+                                <small>You</small>
                             </div>
                             <div id="bottom-player-bubble" class="bubble"><p><span></span></p></div>
 
@@ -151,12 +132,12 @@
                             <div id="results-div">
                                 <div class="dialog results" id="result-box">
                                     <h3>Congratulations, you won!</h3>
-                                    <img src="./Crazy Eights_files/trophy.png" alt="Trophy">
+                                    <img src="./cz8_files/trophy.png" alt="Trophy">
                                     <span class="winner-img" id="left-player-win" style="width: 120px; height: 120px; background-position: -120px 0px;"></span>
                                     <span class="winner-img" id="right-player-win" style="width: 120px; height: 120px; background-position: -360px 0px;"></span>
                                     <span class="winner-img" id="top-player-win" style="width: 120px; height: 120px; background-position: -240px 0px;"></span>
                                     <span class="winner-img" id="bottom-player-win" style="width: 120px; height: 120px; background-position: 0px 0px;"></span>
-                                    <img src="./Crazy Eights_files/trophy.png" alt="Trophy">
+                                    <img src="./cz8_files/trophy.png" alt="Trophy">
                                     <div class="button-panel">
                                         <button id="start-new-game">Start a new game!</button>
                                     </div>
@@ -168,105 +149,39 @@
             
                 <a name="rules"></a>
                 <div id="rules">
-                    <h2>Crazy Eights Rules</h2>
-                    
-	<p>
-	These are the rules I use for Crazy Eights. They're slightly different from the basic rules
-	shown in the <a href="http://en.wikipedia.org/wiki/Crazy_Eights">Wikipedia article</a>, but 
-	this is how I originally learned it when I was a child (under the name Olsen Olsen).
-	</p>
-							
-	<ol>
-		<li>The purpose of the game is to get rid of all your cards.</li>
-		<li>You can play any card of the same suit as the one at the top of the pile. 
-			Example: There's a club at the top of the pile, you can play any club.</li>
-		<li>You can play any card of the same rank as the one at the top of the pile. 
-			Example: There's a six of clubs at the top of the pile, you can play any other six.</li>
-		<li>You can play two or more cards of the same rank at the same time, but the first one of them
-			must be the same suit or rank as the pile.
-			Example: There's a club on the pile. You can play the 5 of clubs, the 5 of hearts and the 5 of diamonds
-			all at the same time. Do this by selecting the cards (right click or Ctrl+click) on them in the order
-			you want to play them. Once you've selected them, left click on any of them to play all the selected
-			cards at once.  If you are playing on an iPad or another tablet you can click a card and hold the finger on it for a second, then it will be selected. Select the ones you want to play together, and then tap on one of them to play them all together.</li>
-		<li>If you have no card that you can play you can draw up to 3 cards from the deck. You can't draw
-			if you have any cards that you can play in your hand. If you've drawn 3 cards and still can't play
-			you must pass and the next player plays.</li>
-		<li>You can always play an eight, and then you can change the suit to whatever you want. The game will prompt you
-			for the suit after you click the eight.</li>
-		<li>If the first card on the table is an eight when you start, then you are allowed to put down any card from your hand.</li>
-	</ol>
- 
-                    <p><a href="http://www.crazyeights-cardgame.com/#play" class="playlink">Back to game</a></p>
-                </div>
-                <div id="ad-rectangle" class="ad">
-                    <label>Advertisement</label>
-                    
-                    
-<script async="" src="./Crazy Eights_files/adsbygoogle.js"></script>
-<!-- Crazy Eights Rectangle -->
-<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-1347967898967153" data-ad-slot="3651839023" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent"><iframe width="336" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;"></iframe></ins></ins></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
                     
+				
+
+ 
+                    <!--p><a href="http://www.crazyeights-cardgame.com/#play" class="playlink">Back to game</a></p-->
                 </div>
                 
                 <a name="about"></a>
                 <div id="about">
-                    <h2>About Crazy Eights</h2>
+                   
                     
-    <div id="authorpic"><img src="./Crazy Eights_files/einar.jpg" alt="Author image"></div>	
-    <p>
-	    This game was made by me. My name is Einar Egilsson and over there on the left is my current Facebook profile picture! 
-	    Crazy Eights was one of the first card games I ever learned (under the name Olsen Olsen) and it's also one of the first 
-	    card games I taught my 5 year old son. After I finished my other online card game, <a href="http://www.idiot-cardgame.com/">Idiot</a>
-	    (a.k.a. <a href="http://www.shithead-cardgame.com/">Shithead</a>), I wanted to make another online card game and Crazy Eights seemed like the 
-	    obvious choice, especially since I wanted to make a game my son could play by himself.
-    </p>
+    <!--div id="authorpic"><img src="./cz8_files/einar.jpg" alt="Author image"></div-->	
 
-    <p>
-	    The game is made using html+javascript+css with jQuery used for the animations. All the graphics used for the game 
-	    I found at <a href="http://www.openclipart.org/">OpenClipArt</a>, a great site with free graphics. The excellent 
-	    playing card images were made by <a href="http://nicubunu.ro/">Nicu Buculei</a>, and the player images were made 
-	    by <a href="http://www.openclipart.org/user-detail/Gerald_G">Gerald G</a>.
-    </p>
 
-    <p>
-	    Any comments, questions, ideas for other games or anything else can be sent to <a href="mailto:simplegames@simplegames.io">simplegames@simplegames.io</a>.
-    </p>
+ 
 
-                    <p><a href="http://www.crazyeights-cardgame.com/#play" class="playlink">Back to game</a></p>
-                    <p id="version-info">This is version 392 of Crazy Eights</p>
-                    <p id="privacy">
-                        This website uses cookies to store your preferences, and for advertising purposes.<br>
-                        Read more about what data we store in our <a href="http://www.crazyeights-cardgame.com/privacy/">Privacy Policy</a>.
-                    </p>
+                    <!--p><a href="http://www.crazyeights-cardgame.com/#play" class="playlink">Back to game</a></p-->
+                    <p id="version-info">This is version 396 of Crazy Eights</p>
+
                 </div>
             </div>
             
-            <script type="text/javascript" src="./Crazy Eights_files/jquery.min.js"></script>
+            <script type="text/javascript" src="./cz8_files/jquery.min.js"></script>
             <script>
                 if (!window.jQuery) {
                     document.write('<scr' + 'ipt src="http://cardstatic.com/shared/lib/jquery-1.5.1.min.js"><' + '/script>');
                 }
             </script>
-            <script src="./Crazy Eights_files/crazyeights.min.js"></script>
+            <script src="./cz8_files/crazyeights.min.js"></script>
 
         </div>
-        <div id="ad-right" class="ad">
-            <label>Advertisement</label>
-            
-            
-<script async="" src="./Crazy Eights_files/adsbygoogle.js"></script>
-<!-- Crazy Eights Skyscraper -->
-<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-1347967898967153" data-ad-slot="9698372622" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent"><ins id="aswift_1_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent"><iframe width="160" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;"></iframe></ins></ins></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-            
-        </div>
+        
         <div style="clear:both;"><!-- --></div>
     </div>
 
