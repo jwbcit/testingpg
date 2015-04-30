@@ -6,13 +6,15 @@
 }
 
 body {
-    padding: 10px;
-    background-color: #afcffe;
-    background:-webkit-linear-gradient(#afcffe 400px, FloralWhite 1300px);
-    background:-moz-linear-gradient(#afcffe 400px, FloralWhite 1300px);
-    background:linear-gradient(#afcffe 400px, FloralWhite 1300px);
-    font-family:  Arial, sans-serif;
-    color:#333;
+    background-color:#00a000;
+	border:solid 3px white;
+	border-radius:30px;
+	color:white;
+	padding:10px;
+	margin-bottom:40px;
+	box-shadow:black 0 0 5px;
+
+
 
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -23,9 +25,6 @@ body {
 }
  
 
-.debug #board {
-	border:solid 1px red;
-}
 
 .debug #play-page {
 	border:solid 1px blue;
@@ -120,13 +119,7 @@ h3 {
 }
 
 #board {
-	background-color:#00a000;
-	border:solid 3px white;
-	border-radius:30px;
-	color:white;
-	padding:10px;
-	margin-bottom:40px;
-	box-shadow:black 0 0 5px;
+	
 }
 
 #board h3 {
